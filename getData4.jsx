@@ -87,7 +87,7 @@ const dataFetchReducer = (state, action) => {
 // App that gets data from Hacker News url
 function App() {
   const { Fragment, useState, useEffect, useReducer } = React;
-  const [query, setQuery] = useState("MIT");
+  const [query, setQuery] = useState("Premier League");
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 10;
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
